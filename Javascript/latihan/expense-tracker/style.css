@@ -1,0 +1,138 @@
+*,
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    cursor: default;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+
+	background-color: aqua;
+}
+
+main {
+	width: 500px;
+	background-color: beige;
+	padding: 20px;
+    border-radius: 8px;
+}
+
+main h1 {
+	text-align: center;
+	text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.display {
+	display: flex;
+	gap: 10px;
+
+	font-size: larger;
+	text-transform: capitalize;
+	align-items: center;
+}
+
+.display input {
+	width: 100%;
+	height: 30px;
+
+	font-size: 30px;
+    cursor: auto;
+	font-weight: bold;
+	background: transparent;
+	border: none;
+}
+
+.form {
+	margin-top: 10px;
+    margin-bottom: 10px;
+	text-align: center;
+}
+
+.form p {
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+.form input {
+    width: 40%;
+    height: 25px;
+}
+
+.form input:hover {
+    cursor: text;
+}
+
+.form select {
+    width: 15%;
+    height: 25px;
+}
+
+.form select:hover {
+    cursor: pointer;
+}
+
+.form button {
+    margin-top: 5px;
+    width: 100%;
+    height: 25px;
+}
+
+.form button:hover {
+    cursor: pointer;
+}
+
+.income {
+	background-color: #d4f8d4;
+	color: #0a070a;
+}
+
+.expense {
+	background-color: #d4d6d6;
+	color: #a10000;
+}
+
+.filter {
+	display: flex;
+	gap: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.filter button {
+	flex: 1;
+	height: 25px;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 10px;
+}
+
+ul li {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 6px 10px;
+	margin-bottom: 6px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+ul li button {
+	border: none;
+	background: transparent;
+	font-weight: bold;
+	color: inherit;
+	cursor: pointer;
+}

@@ -1,0 +1,45 @@
+body {
+	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: bisque;
+}
+
+.container {
+	width: 500px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.container h1 {
+	text-align: center;
+}
+
+.input-group {
+	text-align: center;
+}
+
+.input-group button {
+	width: 50px;
+	height: 20px;
+	background-color: blue;
+	color: white;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px black;
+}
+
+.input-group button:hover {
+    cursor: pointer;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+	margin: 8px auto;
+}
+
+.done span {
+	text-decoration: line-through;
+	color: gray;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>expense-tracker</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="container">
+			<h1>expense-tracker</h1>
+
+			<div class="display">
+				<h2>saldo:</h2>
+				<input type="text" id="balance" name="balance" value="0" readonly />
+			</div>
+
+			<section class="form">
+				<p>add transaction:</p>
+
+				<input
+					type="text"
+					name="transaction"
+					id="transaction"
+					placeholder="transaction name"
+					required
+				/>
+				<input
+					type="number"
+					name="amount"
+					id="amount"
+					placeholder="100000"
+					required
+				/>
+
+				<select name="type" id="type">
+					<option value="income" class="income">income</option>
+					<option value="expense" class="expense">expense</option>
+				</select>
+
+				<button type="submit" id="add" name="add">submit</button>
+			</section>
+
+			<hr />
+
+			<div class="filter">
+				<button onclick="setFilter('all')">all</button>
+				<button onclick="setFilter('income')">income</button>
+				<button onclick="setFilter('expense')">expense</button>
+			</div>
+
+			<ul id="tracker"></ul>
+		</main>
+	</body>
+	<script src="script.js"></script>
+</html>
