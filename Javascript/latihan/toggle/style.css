@@ -1,0 +1,83 @@
+*,
+html,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: aqua;
+}
+
+main {
+	width: 500px;
+	padding: 20px;
+	background-color: white;
+}
+
+h1 {
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.display {
+	text-align: center;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.toggle {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+.toggle-label {
+	cursor: pointer;
+}
+.toggle #toggle {
+	opacity: 0;
+	display: none !important;
+}
+
+.toggle .button {
+	background-color: black;
+	width: 50px;
+	height: 26px;
+	border-radius: 50px;
+	position: relative;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bi-moon-fill,
+.bi-sun-fill {
+	color: yellow;
+}
+
+.button .ball {
+	background-color: white;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+
+input:checked + .button .ball {
+	transform: translateX(24px);
+}
+
+#toggle {
+	display: none;
+}

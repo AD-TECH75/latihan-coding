@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Notes-Manager</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="card">
+				<h1>notes-manager</h1>
+
+				<div class="display">
+					<input type="text" name="title" id="title" placeholder="title" />
+					<textarea
+						name="description"
+						id="description"
+						placeholder="description"
+					></textarea>
+					<button id="submit">Submit</button>
+				</div>
+
+				<hr />
+
+				<div class="table-container">
+					<table id="table-list">
+						<thead>
+							<tr>
+								<th class="number">no</th>
+								<th class="title">title</th>
+								<th class="description">description</th>
+								<th class="act">action</th>
+							</tr>
+						</thead>
+
+						<tbody id="list"></tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script src="script.js"></script>
+</html>

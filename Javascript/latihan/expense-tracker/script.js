@@ -21,7 +21,6 @@ function render() {
 		const li = document.createElement("li");
 		li.classList.add(trx.type);
 
-		const sign = trx.type === "income" ? "+" : "-";
 		const value = trx.type === "income" ? trx.amount : -trx.amount;
 
 		total += value;

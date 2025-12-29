@@ -1,0 +1,184 @@
+*,
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: aqua;
+}
+
+main {
+	width: 500px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+main h1 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.confirm {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.confirm-container {
+	width: 350px;
+	padding: 10px;
+	background-color: rgb(226, 226, 226);
+	border-radius: 5px;
+}
+
+.confirm-container h1 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+.confirm-container p {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.confirm-container .confirm-button {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.confirm-button button {
+	width: 20%;
+	height: 25px;
+	text-transform: uppercase;
+}
+
+.display input {
+	width: 100%;
+	height: 25px;
+	margin-bottom: 5px;
+	font-size: larger;
+}
+
+.display textarea {
+	width: 100%;
+	height: 60px;
+	margin-bottom: 2px;
+	font-size: larger;
+}
+
+.display button {
+	width: 100%;
+	height: 20px;
+	font-size: medium;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.table-container {
+	width: 100%;
+	height: 236px;
+	margin-top: 5px;
+	overflow-y: auto;
+	border: 2px solid black;
+}
+
+.table-container table {
+	width: 100%;
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table thead th {
+	position: sticky;
+	padding: 5px;
+	top: 0;
+	background-color: rgb(222, 222, 222);
+	text-transform: uppercase;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+
+table thead .number {
+	width: 10px;
+}
+
+table thead .title {
+	width: 80px;
+}
+
+table thead .description {
+	width: 360px;
+}
+
+table thead .act {
+	width: 20px;
+}
+
+table td {
+	padding: 5px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+
+table tbody .done {
+	text-decoration: line-through;
+}
+
+table tbody .act div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	font-size: 12px;
+}
+
+.empty-row {
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	color: #888;
+	background-color: #f9f9f9;
+}
+
+.btnEdit {
+	cursor: pointer;
+	background-color: rgb(255, 255, 43);
+	border: 1px solid rgb(182, 182, 0);
+}
+
+.btnDone {
+	cursor: pointer;
+	background-color: #90ee90;
+	border: 1px solid #006400;
+}
+
+.btnDelete {
+	cursor: pointer;
+	background-color: #ffcccb;
+	border: 1px solid #8b0000;
+}
