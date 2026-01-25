@@ -1,0 +1,65 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.animated-link {
+    text-decoration: none; /* Menghilangkan garis bawah default */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.animated-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Tebal garis */
+    bottom: 0;
+    left: 50%; /* Mulai dari tengah */
+    background-color: var(--bs-warning); /* Warna garis (Bootstrap Primary) */
+    transition: all 0.3s ease;
+}
+
+.animated-link:hover::after {
+    width: 100%;
+    left: 0; /* Melebar ke seluruh panjang teks */
+}
+
+.animated-link:hover {
+    color: var(--bs-warning); /* Warna teks saat hover */
+}
+
+main {
+    flex-grow: 1;
+}
