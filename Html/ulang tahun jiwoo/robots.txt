@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ad-tech75.github.io/jiwoosbirthday/sitemap.xml
