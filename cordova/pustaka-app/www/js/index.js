@@ -1,6 +1,6 @@
 // Konfigurasi Supabase
-const SUPABASE_URL = "https://catpincjeferfdrwclyp.supabase.co";
-const SUPABASE_KEY = "ISI_ANON_KEY_KAMU_DI_SINI";
+const SUPABASE_URL = "https://qeeeutopvtpcukzancgr.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFlZWV1dG9wdnRwY3VremFuY2dyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAwNTk0NDcsImV4cCI6MjEwNTYzNTQ0N30.-dI5slnbp0meJvgkEua3dGSN-f-BflKdpV4RnrtHfBQ";
 
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
